@@ -27,6 +27,7 @@ class CliffWalkingEnv(gym.Env):
 
         # There are four actions: up, down, left and right
         self.action_space = spaces.Discrete(4)
+        self.actions = [(0, +1), (+1, 0), (0, -1), (-1, 0)]
 
          # observation is the x, y coordinate of the grid
         self.observation_space = spaces.Discrete(self.rows*self.cols)
