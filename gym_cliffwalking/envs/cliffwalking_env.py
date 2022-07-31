@@ -68,7 +68,7 @@ class CliffWalkingEnv(gym.Env):
         self.ax = None
         self.position = np.array(self.start)
         self.arrow = np.array((0, 0))
-        return self.observation(self.current_state)
+        return self.current_state
 
     def render(self, mode='human'):
         fig = plt.figure()
